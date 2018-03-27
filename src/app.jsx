@@ -11,6 +11,7 @@ import About from './About';
 import Contact from './Contact';
 import OMDBSearch from './OMDBSearch';
 import MovieDetailPage from './MovieDetailPage';
+import ShowMovie from './ShowMovie';
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
           <Route path="/contact" component={Contact} />
           <Route path="/search" component={OMDBSearch} />
           <Route path="/search/:imdbID" component={MovieDetailPage} />
+          <Route path="/results/:imdbID" component={ShowMovie} />
         </Router>
       </div>
     );
